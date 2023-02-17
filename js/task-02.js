@@ -19,5 +19,5 @@ const allEl = ingredients => {
 
 const elements = allEl(ingredients);
 
-const ingredientsEl = document.querySelector('ul');
+const ingredientsEl = document.querySelector('.gallery');
 ingredientsEl.append(...elements);
