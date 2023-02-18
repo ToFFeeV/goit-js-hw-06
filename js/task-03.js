@@ -13,7 +13,6 @@ const images = [
   },
 ];
 
-
 const galleryEl = document.querySelector('.gallery');
 
 const allEl = images
@@ -21,28 +20,3 @@ const allEl = images
   .join(" ");
 
 galleryEl.insertAdjacentHTML("afterbegin", allEl);
-
-console.log(galleryEl);
-
-
-
-
-// const allEl = images => {
-//   return images.map(image => {
-//     const imageEl = document.createElement('img');
-//     imageEl.src = image.url;
-//     imageEl.alt = image.alt;
-//     imageEl.width = 300;
-
-//     return imageEl;
-//   })
-// }
-
-// const elements = allEl(images);
-
-// const galleryEl = document.querySelector('.gallery');
-// galleryEl.width = 1200;
-// galleryEl.style.display = "grid";
-// galleryEl.append(...elements);
-
-// console.log(galleryEl);
